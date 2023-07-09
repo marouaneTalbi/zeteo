@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 // import 'react-range-slider-input/dist/style.css';
 import MultiRangeSlider from "multi-range-slider-react";
 import { VideoThumbnailCapture } from 'components/Img/videoToimages';
+import { Button } from 'components/Button';
+import { Img } from 'components/Img';
 
 export default function VideoCutter({video, getVideoCutterData}) {
   const rangeSliderRef = useRef(null);
@@ -60,14 +62,23 @@ export default function VideoCutter({video, getVideoCutterData}) {
     // return image
   };
 
- 
+  const downloadVideo = () => {
+  const videoLink = '../../assets/videos/bfm.mp4'
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = videoLink;
+    downloadLink.download = 'video.mp4';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
 
   var footerStyle = {
     backgroundImage: `url(${image})`,
     backgroundRepeat:'round',
     borderRadius:10,
     padding:0,
-    width:'100%', 
+    width:'85%', 
   };
 
   return (
@@ -76,6 +87,7 @@ export default function VideoCutter({video, getVideoCutterData}) {
       <div style={{display:'flex', flexDirection:'column', width:'100%'}}>
         <VideoThumbnailCapture videoUrl={video} getImageUrl={handleCapture} /> 
 
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
         <MultiRangeSlider
           ref={rangeSliderRef}
           style={footerStyle}
@@ -86,10 +98,16 @@ export default function VideoCutter({video, getVideoCutterData}) {
           maxValue={maxValue}
           duration={maxValue}
           onInput={(e) => {
-          handleInput(e);
+            handleInput(e);
           }}
           max={max}
         />
+
+        <Button onClick={downloadVideo} className="bg-light_blue-400_19 cursor-pointer flex items-center justify-center min-w-[30px] px-[35px] py-3.5 rounded-[25px]" style={{color:'white'}}>
+          DOWNLOAD
+        </Button>
+      </div>
+
       </div>
     </>
   );
