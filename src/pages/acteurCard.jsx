@@ -36,7 +36,7 @@ const ActeurCard = () => {
                             className="capitalize mt-3 sm:text-[38px] md:text-[44px] text-[52px] text-white-A700"
                             size="txtDosisSemiBold52"
                         >
-                            cNN TONIGHT with Don Lemon
+                            Replay BFMTV : 90 minutes Aurélie Casse
                         </Text>
                         <Text
                             className="capitalize ml-1 md:ml-[0] text-blue_gray-200 text-sm tracking-[0.28px]"
@@ -78,52 +78,7 @@ const ActeurCard = () => {
                             size="txtJostRegular18"
                             >
                             <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                Don Lemon Tonight (formerly CNN Tonight with Don
-                                Lemon) is a late evening news commentary program which
-                                aired from 2014 to 2022 on{" "}
-                            </span>
-                            <a
-                                href="javascript:"
-                                className="text-blue_gray-200 font-jost text-left font-normal underline"
-                            >
-                                CNN
-                            </a>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                , hosted by{" "}
-                            </span>
-                            <a
-                                href="javascript:"
-                                className="text-blue_gray-200 font-jost text-left font-normal underline"
-                            >
-                                Don Lemon
-                            </a>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                .
-                            </span>
-                            <a
-                                href="javascript:"
-                                className="text-blue_gray-200 font-jost text-left font-normal underline"
-                            >
-                                [1]
-                            </a>
-                            <a
-                                href="javascript:"
-                                className="text-blue_gray-200 font-jost text-left font-normal underline"
-                            >
-                                [2]
-                            </a>
-                            <a
-                                href="javascript:"
-                                className="text-blue_gray-200 font-jost text-left font-normal underline"
-                            >
-                                <>
-                                [3]
-                                <br />
-                                </>
-                            </a>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                The show aired on weeknights live from 10:00 pm to
-                                midnight ET.
+                            Aurélie Casse présente le nouveau rendez-vous des débuts de soirée sur BFMTV « Le 90 minutes » : le tour complet de l’information de la journée.
                             </span>
                             </Text>
                         </div>
@@ -132,7 +87,7 @@ const ActeurCard = () => {
                             className="leading-[30.00px] md:mt-0 text-lg text-light_blue-400"
                             size="txtJostRegular18Lightblue400"
                             >
-                            <span className="text-light_blue-400 font-jost text-left font-normal">
+                            {/* <span className="text-light_blue-400 font-jost text-left font-normal">
                                 Director
                             </span>
                             <span className="text-light_blue-400 font-jost text-left font-normal">
@@ -144,7 +99,7 @@ const ActeurCard = () => {
                                 Frank Darabont
                                 <br />
                                 </>
-                            </span>
+                            </span> */}
                             <span className="text-light_blue-400 font-jost text-left font-normal">
                                 Stars
                             </span>
@@ -154,7 +109,7 @@ const ActeurCard = () => {
                             </span>
                             <span className="text-blue_gray-200 font-jost text-left font-normal">
                                 <>
-                                Don Lemon
+                                Aurelie Casse
                                 <br />
                                 </>
                             </span>
@@ -162,23 +117,10 @@ const ActeurCard = () => {
                                 Tags :{" "}
                             </span>
                             <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                Joe Biden
+                                90 minutes, France
                             </span>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                ,{" "}
-                            </span>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                USA
-                            </span>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                , Donald{" "}
-                            </span>
-                            <span className="text-blue_gray-200 font-jost text-left font-normal">
-                                <>
-                                Trump
-                                <br />
-                                </>
-                            </span>
+                      
+                        
                             </Text>
                         </div>
                     </div>
